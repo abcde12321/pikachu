@@ -1,4 +1,4 @@
-# pikachu
+# binary classification of pikachu image
  
 ## required python framework
 skilearn, skimage, python3+, opencv
