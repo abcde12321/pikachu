@@ -11,7 +11,7 @@ skilearn, skimage, python3+, opencv, numpy
 
 test against other images:
 
-`python predict -m lr -f pikachu_dataset/extra_test/`
+`python predict.py -m lr -f pikachu_dataset/extra_test/`
 
 ## Steps:
 * keep a list all pokemon and not pokemon images (some images e.g. .gif are left out)
