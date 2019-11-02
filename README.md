@@ -5,11 +5,12 @@ skilearn, skimage, python3+, opencv
 
 ## to use
 
-python train.py
+`python train.py`
 'lr.pkl' will be created at 'model/lr.pkl'
 
 #to test against other images
-python predict -m lr -f pikachu_dataset/extra_test/
+
+`python predict -m lr -f pikachu_dataset/extra_test/`
 
 ## Steps:
 * keep a list all pokemon and not pokemon images (some images e.g. .gif are left out)
