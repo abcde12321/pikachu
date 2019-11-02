@@ -3,20 +3,23 @@
 ## required python framework
 skilearn, skimage, python3+, opencv
 
-##to use
+## to use
 
 python train.py
 'lr.pkl' will be created at 'model/lr.pkl'
 
-##to test other images
+#to test against other images
 python predict -m lr -f pikachu_dataset/extra_test/
 
 ## Steps:
-1, keep a list all pokemon and not pokemon images (some images e.g. .gif are left out)
-2, extract local binary pattern features 
-3, train with logistic regression
+* keep a list all pokemon and not pokemon images (some images e.g. .gif are left out)
+* extract local binary pattern features 
+* train with logistic regression
 
-
+## known issues
+* gif image are left out
+* some images are broken (libpng warning: iCCP: known incorrect sRGB profile)
+* accuracy are very low (probably should use features better than local binary pattern and neural net instead of logistic regression)
 
 ## TODO:
 k-fold, against adversarial attack

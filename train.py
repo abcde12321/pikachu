@@ -2,6 +2,7 @@ import numpy as np
 import cv2 as cv
 import os
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import f1_score
 from skimage.feature import local_binary_pattern
 import pathlib
 import pickle
@@ -63,8 +64,8 @@ def main():
   lg_model = logisticRegr.fit(X_train, Y_train)
 
   #evulate model
-  print('train accuracy:',lg_model.score(X_train, Y_train))
-  print('test accuracy:',lg_model.score(X_test, Y_test))
+  print('train accuracy:',lg_model.score(X_train, Y_train),' f1:',f1_score(Y_train,lg_model.predict(X_train)))
+  print('test accuracy:',lg_model.score(X_test, Y_test),' f1:',f1_score(Y_test,lg_model.predict(X_test)))
 
   #save model
   path_model = os.path.join(os.path.dirname(__file__), "model/lr.pkl")
