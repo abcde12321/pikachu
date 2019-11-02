@@ -1,14 +1,15 @@
-# binary classification of pikachu image
+# binary classification for pikachu images
  
 ## required python framework
 skilearn, skimage, python3+, opencv, numpy
 
-## to use
+## How to use
 
 `python train.py`
+
 'lr.pkl' will be created at 'model/lr.pkl'
 
-#to test against other images
+test against other images:
 
 `python predict -m lr -f pikachu_dataset/extra_test/`
 
