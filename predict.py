@@ -30,7 +30,7 @@ def predict(model, imgs_path):
         path = os.path.join(path_image, img) 
         feature = extract_features(path)
         prediction = model_load.predict([feature])
-        print(prediction)
+        #print(prediction)
         print('predict ',img, 'is' if prediction==1 else 'is not','pikachu' )
 
 def main(argv):
